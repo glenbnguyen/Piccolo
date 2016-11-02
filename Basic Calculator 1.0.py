@@ -1,4 +1,12 @@
-infinity = True
+""" This calculator allows: 
+Addition 
+Subtraction 
+Multiplication 
+Division 
+Squaring
+& a While Loop
+ """
+infinity = True 
 while infinity == True:
     class Calculator():
         def addition(x, y):
@@ -20,21 +28,19 @@ while infinity == True:
         def squaring(x, y):
             square = x ** y
             return square
-
+        
     print("Select an Operation")
     print("'a' - Addition")
     print("'s' - Subtraction")
     print("'m' - Multiplication")
     print("'d' - Division")
     print("'q' - Squaring")
-
-
+    
     choice = str(input("Enter your operation #, a=addition / s=subtraction / m=multiplication / d=division / q=squaring: "))
-
-
+    
     num_1= int(input("Enter first number: "))
     num_2 = int(input("Enter second number: "))
-
+    
     if choice == 'a':
         print(num_1, "+", num_2, "=", Calculator.addition(num_1, num_2))
     elif choice == 's':
