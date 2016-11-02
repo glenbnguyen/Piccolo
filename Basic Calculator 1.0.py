@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 infinity = True
 while infinity == True:
     class Calculator():
