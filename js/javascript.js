@@ -1,9 +1,9 @@
-var gengar = {
+var gengar = { // Variable to hold Gengar's information
 	name: "Gengar", 
 	health: 100,
 	lvl: 6,
 	effect: null,
-	moves: [{
+	moves: [{ //moves Dictionary
 		name: "Night Shade",
 		type: "Attack",
 		power: 40,
@@ -33,12 +33,12 @@ var gengar = {
 
 };
 
-var pikachu = {
+var pikachu = { //enemy variable
 	name: "Pikachu", 
 	health: 100,
 	lvl: 5,
 	effect: null,
-	moves: [{
+	moves: [{ // set enemy moves dictionary
 		name: "Thundershock",
 		type: "Attack",
 		power: 20,
@@ -67,14 +67,14 @@ var pikachu = {
 
 };
 
-var currentState;
-var cpuPokemon;
-var userPokemon;
+var currentState; //Current state of the game
+var cpuPokemon; // Variable that holds CPU information
+var userPokemon; // Variable that holds User information
 
-var cpuTurn = {
-	play: function() {
-		var randomMove = Math.floor(Math.random() * 4);
-		var currentCPUMove = cpuPokemon.moves[randomMove];
+var cpuTurn = { //Variable that holds CPU's turn information
+	play: function() { 
+		var randomMove = Math.floor(Math.random() * 4); // randomMove variable using Math.random function * 4 and then rounded with Math.floor function
+		var currentCPUMove = cpuPokemon.moves[randomMove]; // currentCPUMove holds the computer's values of the CPU moves and selects a random move from the 4 possible moves via previous randomMove variable. 
 
 		var setUpCPUField = function() {
 			$("#chat-text").text("What will " + cpuPokemon.name + " do?");
